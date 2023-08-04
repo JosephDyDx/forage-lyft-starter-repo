@@ -7,9 +7,9 @@ assert using unittest
 method names must start with test
 '''
 
-from willoughby_engine import willoughbyEngine
-from sternman_engine import sternmanEngine
-from capulet_engine import capuletEngine
+from ..willoughby_engine import willoughbyEngine
+from ..sternman_engine import sternmanEngine
+from ..capulet_engine import capuletEngine
 import unittest
 
 #driver code 

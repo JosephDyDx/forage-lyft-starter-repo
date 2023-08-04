@@ -6,9 +6,9 @@ pass values to imported part (class)
 assert using unittest
 '''
 
-from willoughby_engine import willoughbyEngine
-from sternman_engine import sternmanEngine
-from capulet_engine import capuletEngine
+from ..willoughby_engine import willoughbyEngine
+from ..sternman_engine import sternmanEngine
+from ..capulet_engine import capuletEngine
 
 #driver code 
 def test_willoughby_engine():

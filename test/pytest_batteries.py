@@ -6,8 +6,8 @@ pass values to imported part (class)
 assert using unittest
 '''
 
-from spindler_Battery import spindlerBattery
-from nubbin_Battery import nubbinBattery
+from ..spindler_Battery import spindlerBattery
+from ..nubbin_Battery import nubbinBattery
 from datetime import datetime
 from dateutil.relativedelta import *
 
