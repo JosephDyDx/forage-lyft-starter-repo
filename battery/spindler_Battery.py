@@ -8,7 +8,7 @@ class spindlerBattery(Battery):
         self.current_date = current_date
 
     def needs_service(self):
-        if relativedelta(self.current_date, self.last_service_date).years > 2:
+        if relativedelta(self.current_date, self.last_service_date).years > 3:
             return True
         else:
             return False

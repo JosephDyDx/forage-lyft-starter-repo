@@ -6,8 +6,9 @@ pass values to imported part (class)
 assert using unittest
 '''
 
-from ..spindler_Battery import spindlerBattery
-from ..nubbin_Battery import nubbinBattery
+from battery.spindler_Battery import spindlerBattery
+from battery.nubbin_Battery import nubbinBattery
+
 from datetime import datetime
 from dateutil.relativedelta import *
 
@@ -26,14 +27,14 @@ def test_nubbin_False_case():
     assert battery.needs_service() == False, "Should be False"
 
 def test_spindler_battery():
-    #>2 years
+    #>3 years
     current_date = datetime.today().date()
     last_service_date = current_date - relativedelta(years=4)
     battery = spindlerBattery(last_service_date, current_date)
     assert battery.needs_service() == True, "Should be True"
 
 def test_spindler_False_case():
-    #<2 years
+    #<3 years
     current_date = datetime.today().date()
     last_service_date = current_date - relativedelta(years=1)
     battery = spindlerBattery(last_service_date, current_date)
