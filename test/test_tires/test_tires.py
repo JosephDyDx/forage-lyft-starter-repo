@@ -1,6 +1,6 @@
 '''
 import part to test
-create function and class to test part
+create function and class to test  part
 create parameters and assign their values
 pass values to imported part (class)
 assert using unittest
@@ -13,7 +13,7 @@ from tires.octoprime_tire import octoprimeTire
 import unittest
 
 class test_carrigan_tires(unittest.TestCase):
-    def test_carrigan(self):
+    def test_carrigan(self):  
         # 1 sensor returns a value >=0.9
         tire_wear = [0,1,0.7,1]
         tire = carriganTire(tire_wear)
